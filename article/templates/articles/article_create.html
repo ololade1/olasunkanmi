@@ -1,0 +1,27 @@
+{%extends 'blog/base.html'%}
+{% load crispy_forms_tags %}
+{% load static from staticfiles%}
+
+{% block content %}
+<div class="create-article">
+	<h2>Create an Awesome New Article</h2>
+	<form class="site form" action="{%url 'articles:create' %}" method="post" enctype="multipart/form-data">
+		{%csrf_token%}
+		<div class="row">
+			<div class="col-6">
+				{{form.title | as_crispy_field}}
+			</div>
+			
+			<div class="col-6">
+				{{form.slug | as_crispy_field}}
+			</div>
+		</div>
+		{{form.body | as_crispy_field}}
+		{{form.thumb | as_crispy_field}}
+		
+		
+		<input type="submit" value="Create">
+	</form>
+		 <script  src="{% static 'slug.js'%}"></script>
+</div>
+{% endblock %}  

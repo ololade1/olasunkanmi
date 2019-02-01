@@ -1,0 +1,22 @@
+ 
+{% extends 'blog/base.html' %} 
+
+{% block content%}
+		
+	<h1>ARTICLES</h1>
+
+	<div class="articles">
+		<div class="row">
+		{% for client in clients %}
+		<div class="col-sm-4">
+           <div class="article">
+           	   <h2><a href="{% url 'articles:detail' slug=client.slug%}" >{{article.title}}</a></h2>
+           		<p>{{article.snippet}}</p>
+           		<p>{{article.date}}</p>
+           		<p class="author">Added by {{article.author.username.title}}</p>
+           </div>
+        </div>
+		{% endfor %}
+		</div>
+	</div>
+{% endblock %} 

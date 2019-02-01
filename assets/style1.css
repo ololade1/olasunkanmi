@@ -1,0 +1,94 @@
+{%load static from staticfiles%}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+ .good {
+ 	background-color: transparent;
+ 	color: white;
+ 	border: none;
+ 	margin-top: 10px;
+ 	font-size: 18px;
+ }
+ body{
+
+ 	margin: 0 auto;
+ }
+ div.wrapper h1{
+ 	text-align: center;
+ 	margin:100px auto;
+ 	font-size:2.4em;
+ }
+.navbar-nav{
+	justify-self:end;
+}
+
+.client{
+	padding: 30px;
+	border: 2px solid black;
+	position: relative;
+	padding-bottom: 40px; 
+}
+.client h2{
+	font-size: 1.2em;
+}
+.client .author{
+	padding: 10px;
+	background-color:black;
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	color:white ; 
+
+}
+
+.service-detail .client{
+	border: none;
+	padding-top: 100px;
+}
+.service-detail .client img{
+	max-width: 100%;
+}
+.service-detail .client h2 {
+	text-align: center;
+	margin:20px auto;
+	font-size: 2em;
+}
+
+.service-detail .client p{
+	text-align: center;
+}
+.site-form {
+	margin-top: 60px;
+	border:2px solid black;
+	padding:20px;
+}
+.site-form input, .site-form textarea{
+	display:block;
+	margin:20px 0 0 0;
+	padding: 10px;
+}
+.create-article{
+	margin-top: 70px;
+}
+.create-article h2{
+	text-align: center;
+}
+.helptext, .helptext ul{
+	margin:0 auto 20px;
+	color:blue;
+	font-size: 1.0em;
+	display: block;
+}
+.errorlist li{
+	padding: 10px;
+	list-style-type: none;
+	border: 2px solid red;
+	color:blue;
+	margin:10px 0;
+	 
+}
+.errorlist{
+	padding:0;
+}
